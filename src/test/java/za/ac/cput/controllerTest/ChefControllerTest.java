@@ -24,16 +24,15 @@ public class ChefControllerTest {
             .createChef("C001",
                     "Smangele",
                     "Female",
-                    12000,
+                    "12000",
                     "Cooking");
 
     private static Chef chef2 = ChefFactory
             .createChef("C002",
                     "Witness",
                     "Male",
-                    2300,
+                    "2300",
                     "Ready");
-
 
     @Autowired
     private TestRestTemplate restTemplate;

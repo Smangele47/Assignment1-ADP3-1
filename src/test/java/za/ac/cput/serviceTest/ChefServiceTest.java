@@ -22,7 +22,7 @@ public class ChefServiceTest {
             ChefFactory.createChef("C001",
                     "Smangele",
                     "Female",
-                    12000,
+                    "12000",
                     "Cooking");
 
     @Test
@@ -64,8 +64,5 @@ public class ChefServiceTest {
         System.out.println(service.findAll());
 
     }
-
-
-
 
 }

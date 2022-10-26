@@ -19,8 +19,8 @@ public class Meal implements Serializable {
     @Id
     private String mealCode;
     private String mealName, mealStatus;
-    private double mealPrice;
-    private boolean isTakeAway;
+    private String mealPrice;
+    private String takeAway;
 
 
     private Meal(){}
@@ -30,16 +30,16 @@ public class Meal implements Serializable {
         this.mealName = builder.mealName;
         this.mealCode = builder.mealCode;
         this.mealPrice = builder.mealPrice;
-        this.isTakeAway = builder.isTakeAway;
+        this.takeAway = builder.takeAway;
         this.mealStatus = builder.mealStatus;
     }
 
     //Constructor
-    public Meal(String mealName, String mealCode, double mealPrice, boolean isTakeAway, String mealStatus) {
+    public Meal(String mealName, String mealCode, String mealPrice, String takeAway, String mealStatus) {
         this.mealName = mealName;
         this.mealCode = mealCode;
         this.mealPrice = mealPrice;
-        this.isTakeAway = isTakeAway;
+        this.takeAway = takeAway;
         this.mealStatus = mealStatus;
     }
 
@@ -60,20 +60,20 @@ public class Meal implements Serializable {
         this.mealCode = mealCode;
     }
 
-    public double getMealPrice() {
+    public String getMealPrice() {
         return mealPrice;
     }
 
-    public void setMealPrice(double mealPrice) {
+    public void setMealPrice(String mealPrice) {
         this.mealPrice = mealPrice;
     }
 
-    public boolean isTakeAway() {
-        return isTakeAway;
+    public String takeAway() {
+        return takeAway;
     }
 
-    public void setTakeAway(boolean takeAway) {
-        isTakeAway = takeAway;
+    public void setTakeAway(String takeAway) {
+        takeAway = takeAway;
     }
 
     public String getMealStatus() {
@@ -90,7 +90,7 @@ public class Meal implements Serializable {
                 "mealName='" + mealName + '\'' +
                 ", mealCode='" + mealCode + '\'' +
                 ", mealPrice=" + mealPrice +
-                ", isTakeAway=" + isTakeAway +
+                ", isTakeAway=" + takeAway +
                 ", mealStatus='" + mealStatus + '\'' +
                 '}';
     }
@@ -99,8 +99,8 @@ public class Meal implements Serializable {
     public static class Builder{
         private String mealName;
         private String mealCode;
-        private double mealPrice;
-        private boolean isTakeAway;
+        private String mealPrice;
+        private String takeAway;
         private String mealStatus;
 
         public String getMealName() {
@@ -121,21 +121,21 @@ public class Meal implements Serializable {
             return this;
         }
 
-        public double getMealPrice() {
+        public String getMealPrice() {
             return mealPrice;
         }
 
-        public Builder setMealPrice(double mealPrice) {
+        public Builder setMealPrice(String mealPrice) {
             this.mealPrice = mealPrice;
             return this;
         }
 
-        public boolean isTakeAway() {
-            return isTakeAway;
+        public String takeAway() {
+            return takeAway;
         }
 
-        public Builder setTakeAway(boolean takeAway) {
-            isTakeAway = takeAway;
+        public Builder setTakeAway(String takeAway) {
+            this.takeAway = takeAway;
             return this;
         }
 
@@ -152,7 +152,7 @@ public class Meal implements Serializable {
             this.mealName=meal.mealName;
             this.mealCode = meal.mealCode;
             this.mealPrice = meal.mealPrice;
-            this.isTakeAway = meal.isTakeAway;
+            this.takeAway = meal.takeAway;
             this.mealStatus = meal.mealStatus;
             return this;
         }

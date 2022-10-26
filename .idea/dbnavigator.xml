@@ -28,7 +28,7 @@
     <loaded-nodes />
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
-    <connection id="c22a425f-d937-450f-8e4d-35f671f235d0">
+    <connection id="cd2b2c9a-ffb4-48dd-95f6-375124baea99">
       <console name="school-db" type="STANDARD" schema="mysql" session="Main" />
     </connection>
   </component>
@@ -36,7 +36,7 @@
     <open-files />
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
-    <connection id="c22a425f-d937-450f-8e4d-35f671f235d0" />
+    <connection id="cd2b2c9a-ffb4-48dd-95f6-375124baea99" />
   </component>
   <component name="DBNavigator.Project.EditorStateManager">
     <last-used-providers />
@@ -67,7 +67,7 @@
   </component>
   <component name="DBNavigator.Project.Settings">
     <connections>
-      <connection id="c22a425f-d937-450f-8e4d-35f671f235d0" active="true" signed="true">
+      <connection id="cd2b2c9a-ffb4-48dd-95f6-375124baea99" active="true" signed="true">
         <database>
           <name value="school-db" />
           <description value="" />

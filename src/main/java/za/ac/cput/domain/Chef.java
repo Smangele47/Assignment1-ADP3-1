@@ -16,7 +16,7 @@ public class Chef implements Serializable {
     @Id
     private String chefID;
     private String chefName,chefGender,mealStatus;
-    private int chefSalary;
+    private String  chefSalary;
 
     private Chef (){}
 
@@ -32,7 +32,7 @@ public class Chef implements Serializable {
     }
 
     //Constructor
-    public Chef(String chefID, String chefName, String chefGender, int chefSalary, String mealStatus) {
+    public Chef(String chefID, String chefName, String chefGender, String chefSalary, String mealStatus) {
         this.chefID = chefID;
         this.chefName = chefName;
         this.chefGender = chefGender;
@@ -65,11 +65,11 @@ public class Chef implements Serializable {
         this.chefGender = chefGender;
     }
 
-    public int getChefSalary() {
+    public String  getChefSalary() {
         return chefSalary;
     }
 
-    public void setChefSalary(int chefSalary) {
+    public void setChefSalary(String  chefSalary) {
         this.chefSalary = chefSalary;
     }
 
@@ -97,7 +97,7 @@ public class Chef implements Serializable {
         private String chefID;
         private String chefName;
         private String chefGender;
-        private int chefSalary;
+        private String  chefSalary;
         private String mealStatus;
 
         public String getChefID() {
@@ -127,11 +127,11 @@ public class Chef implements Serializable {
             return this;
         }
 
-        public int getChefSalary() {
+        public String  getChefSalary() {
             return chefSalary;
         }
 
-        public Builder setChefSalary(int chefSalary) {
+        public Builder setChefSalary(String chefSalary) {
             this.chefSalary = chefSalary;
             return this;
         }

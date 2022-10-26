@@ -22,15 +22,15 @@ public class MealControllerTest {
     private static Meal meal1 = MealFactory
             .createMeal("Mac and Cheese",
                     "10011",
-                    787,
-                    false,
+                    "787",
+                    "false",
                     "Cooking");
 
     private static Meal meal2 = MealFactory
             .createMeal("10012",
                     "Witness",
-                    150,
-                    true,
+                    "150",
+                    "true",
                     "Ready");
 
 

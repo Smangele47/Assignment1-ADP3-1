@@ -19,10 +19,7 @@ public class MealController {
     private  MealServiceImpl mealService;
 
 
-//    @Autowired
-//    public MealController(MealServiceImpl chefService) {
-//        this.mealService = chefService;
-//    }
+
 
     @RequestMapping(value = "/create", method = RequestMethod.POST)
     public Meal create(@RequestBody Meal meal) {
@@ -30,7 +27,7 @@ public class MealController {
                 meal.getMealCode(),
                 meal.getMealName(),
                 meal.getMealPrice(),
-                meal.isTakeAway(),
+                meal.takeAway(),
                 meal.getMealStatus());
         return mealService.create(saveChef);
     }

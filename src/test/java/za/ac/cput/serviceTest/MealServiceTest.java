@@ -20,8 +20,8 @@ public class MealServiceTest {
     private final Meal meal =
             MealFactory.createMeal("Mac and Cheese",
                     "10011",
-                    787,
-                    false,
+                    "787",
+                    "false",
                     "Cooking");
 
     @Test

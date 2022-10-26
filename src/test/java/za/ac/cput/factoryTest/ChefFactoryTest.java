@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 public class ChefFactoryTest {
     @Test
     public void test(){
-        Chef chef = ChefFactory.createChef( "C001","Smangele", "female", 120000, "cooking");
+        Chef chef = ChefFactory.createChef( "C001","Smangele", "female", "120000", "cooking");
         System.out.println(chef.toString());
         assertNotNull(chef);
     }

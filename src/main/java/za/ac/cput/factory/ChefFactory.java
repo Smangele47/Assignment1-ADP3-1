@@ -6,7 +6,7 @@ import za.ac.cput.util.Helper;
 
 public class ChefFactory {
 
-    public static Chef createChef(String chefID, String chefName, String chefGender, int chefSalary, String mealStatus){
+    public static Chef createChef(String chefID, String chefName, String chefGender, String chefSalary, String mealStatus){
 
         if (GenericHelper.isNullorEmpty(chefName) || GenericHelper.isNullorEmpty(chefName))
             return null;

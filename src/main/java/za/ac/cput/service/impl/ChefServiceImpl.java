@@ -39,13 +39,6 @@ public class ChefServiceImpl implements ChefService {
     }
 
 
-//    @Override
-//    public void delete(Chef chef) {
-//        this.chefRepository.delete(chef);
-//
-//    }
-
-
     @Override
     public boolean delete(String ChefID) {
         this.chefRepository.deleteById(ChefID);

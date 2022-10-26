@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 public class MealFactoryTest {
     @Test
     public void test(){
-        Meal meal = MealFactory.createMeal( "Mac and Cheese","10011", 787, false, "cooking");
+        Meal meal = MealFactory.createMeal( "Mac and Cheese","10011", "787", "false", "cooking");
         System.out.println(meal.toString());
         assertNotNull(meal);
     }
